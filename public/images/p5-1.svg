@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="bgp51" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4EEDC"/>
+      <stop offset="100%" stop-color="#F4EEDC" stop-opacity="0.85"/>
+    </linearGradient>
+    <pattern id="patp5main" width="56.0" height="56.0" patternUnits="userSpaceOnUse" patternTransform="rotate(6)">
+          <circle cx="14.0" cy="14.0" r="3.0" fill="#245240" opacity="0.55"/>
+          <path d="M 14.0 6.0 C 18.0 9.0, 18.0 12.0, 14.0 14.0 C 10.0 12.0, 10.0 9.0, 14.0 6.0 Z" fill="#3E8168" opacity="0.5"/>
+          <path d="M 14.0 22.0 C 18.0 19.0, 18.0 16.0, 14.0 14.0 C 10.0 16.0, 10.0 19.0, 14.0 22.0 Z" fill="#3E8168" opacity="0.4"/>
+          <circle cx="14.0" cy="14.0" r="8.0" fill="none" stroke="#245240" stroke-width="0.8" opacity="0.3"/>
+          <circle cx="42.0" cy="40.0" r="2.4" fill="#245240" opacity="0.45"/>
+          <circle cx="42.0" cy="40.0" r="6.0" fill="none" stroke="#3E8168" stroke-width="0.8" opacity="0.35"/>
+        </pattern>
+  </defs>
+  <rect width="600" height="800" fill="url(#bgp51)"/>
+  
+  <!-- outer hairline frame -->
+  <rect x="28" y="28" width="544" height="744" fill="none" stroke="#245240" stroke-width="1" opacity="0.55"/>
+  <rect x="34" y="34" width="532" height="732" fill="none" stroke="#245240" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- pattern panel -->
+  <rect x="60" y="150" width="480" height="520" fill="url(#patp5main)" stroke="#245240" stroke-width="1.5" opacity="0.97"/>
+
+  <!-- corner ornaments -->
+  <path d="M 60 150 L 60 178 M 60 150 L 88 150" stroke="#245240" stroke-width="2" fill="none"/>
+  <path d="M 540 150 L 540 178 M 540 150 L 512 150" stroke="#245240" stroke-width="2" fill="none"/>
+  <path d="M 60 670 L 60 642 M 60 670 L 88 670" stroke="#245240" stroke-width="2" fill="none"/>
+  <path d="M 540 670 L 540 642 M 540 670 L 512 670" stroke="#245240" stroke-width="2" fill="none"/>
+
+  <!-- brand mark -->
+  <text x="300" y="96" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="4" fill="#245240">SANA SAFINAZ</text>
+  <line x1="260" y1="112" x2="340" y2="112" stroke="#245240" stroke-width="1" opacity="0.5"/>
+
+  <!-- fabric label -->
+  <text x="300" y="712" text-anchor="middle" font-family="Georgia, serif" font-size="15" letter-spacing="1" fill="#245240" opacity="0.85">Pure Lawn</text>
+  <text x="300" y="734" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="3" fill="#245240" opacity="0.4">HAND-FINISHED · UNSTITCHED</text>
+
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="patp6close" width="78.0" height="78.0" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+          <rect x="0" y="0" width="28.6" height="78.0" fill="#B96B6B" opacity="0.3"/>
+          <rect x="46.800000000000004" y="0" width="7.800000000000001" height="78.0" fill="#7A3B44" opacity="0.28"/>
+        </pattern>
+  </defs>
+  
+  <rect x="0" y="0" width="600" height="800" fill="url(#patp6close)"/>
+  <rect x="0" y="0" width="600" height="800" fill="#F5E8DD" opacity="0.06"/>
+  <rect x="24" y="24" width="552" height="752" fill="none" stroke="#7A3B44" stroke-width="1.25" opacity="0.6"/>
+  <rect x="24" y="700" width="552" height="76" fill="#F5E8DD" opacity="0.92"/>
+  <rect x="24" y="700" width="552" height="76" fill="none" stroke="#7A3B44" stroke-width="1" opacity="0.4"/>
+  <text x="300" y="732" text-anchor="middle" font-family="Georgia, serif" font-size="15" letter-spacing="1" fill="#7A3B44">Karandi</text>
+  <text x="300" y="754" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="3" fill="#7A3B44" opacity="0.55">FABRIC CLOSE-UP</text>
+
+</svg>

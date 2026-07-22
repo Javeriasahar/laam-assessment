@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="patp3close" width="88.4" height="88.4" patternUnits="userSpaceOnUse">
+          <path d="M0 44.2 L44.2 0 L88.4 44.2 L44.2 88.4 Z" fill="none" stroke="#5C5A52" stroke-width="2.3400000000000003" opacity="0.4"/>
+          <circle cx="44.2" cy="44.2" r="4.680000000000001" fill="#5C5A52" opacity="0.45"/>
+        </pattern>
+  </defs>
+  
+  <rect x="0" y="0" width="600" height="800" fill="url(#patp3close)"/>
+  <rect x="0" y="0" width="600" height="800" fill="#FBF8F2" opacity="0.06"/>
+  <rect x="24" y="24" width="552" height="752" fill="none" stroke="#5C5A52" stroke-width="1.25" opacity="0.6"/>
+  <rect x="24" y="700" width="552" height="76" fill="#FBF8F2" opacity="0.92"/>
+  <rect x="24" y="700" width="552" height="76" fill="none" stroke="#5C5A52" stroke-width="1" opacity="0.4"/>
+  <text x="300" y="732" text-anchor="middle" font-family="Georgia, serif" font-size="15" letter-spacing="1" fill="#5C5A52">Pure Lawn</text>
+  <text x="300" y="754" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="3" fill="#5C5A52" opacity="0.55">FABRIC CLOSE-UP</text>
+
+</svg>

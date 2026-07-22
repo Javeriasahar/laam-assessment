@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F1EBE0;
+  --foreground: #16302A;
+  --ink: #16302A;
+  --ivory: #F1EBE0;
+  --ivory-deep: #E8DFCE;
+  --rose: #B3564A;
+  --rose-deep: #8F4038;
+  --bronze: #A8863E;
+  --good: #3C6E4E;
+  --good-bg: #E4EDE3;
+  --warn: #A8763E;
+  --warn-bg: #F3E7D2;
+  --bad: #B3564A;
+  --bad-bg: #F3E1DD;
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-data: "IBM Plex Mono", "Menlo", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-data);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-data {
+  font-family: var(--font-data);
+}
