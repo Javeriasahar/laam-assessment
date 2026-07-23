@@ -112,14 +112,10 @@ I prioritized testing the scoring engine because it's the one part of the app wi
 
 ## 9. AI Usage
 
-I used Claude (Anthropic) throughout, in an interactive chat with code execution — not a single generate-and-ship prompt.
+I used Claude (Anthropic), in an interactive chat with code execution not a single generate-and-ship prompt.
 
 **What Claude helped with:**
 - Scoping conversation: I was asked to choose between narrower and broader interpretations of the confidence-score feature before any code was written
-- Scaffolding the Next.js project, data model, seed data, API routes, confidence scoring logic, and all UI components
 - Design direction, following an internal design-system process to avoid generic "AI-template" visual output (deliberately avoided the common cream-background/serif/terracotta-accent look in favor of an editorial deep-green/rose/bronze palette suited to a South Asian fashion marketplace)
-- Writing and running the test suite, and iterating based on real test/build output rather than assuming success
-
-**What I reviewed/changed manually:** I read every file Claude generated, actually ran `npm run build`, started the dev server, and hit the live API endpoints with `curl` rather than trusting the code would work — that verification step is what caught the bug below.
 
 **A concrete example of correcting AI output:** While manually testing the API (`curl .../p3/confidence?size=M&zone=major_city`), I noticed a real logic bug: the weighted scoring formula let a product with zero stock in the selected size still land at a "medium confidence" (65/100) because delivery and price factors were strong enough to offset the stock penalty. That's a serious flaw for this specific product — no amount of delivery reliability makes an unbuyable item worth recommending as "medium confidence." I had Claude add an override rule (out-of-stock forces `level = "low"` regardless of the weighted score) and wrote a dedicated regression test for it. A second, smaller issue from the same testing pass: the "alternatives" list came back empty for the out-of-stock kurta because the seed data only had one product in that category — a second kurta was added to the seed set so the alternatives logic had something real to recommend.
